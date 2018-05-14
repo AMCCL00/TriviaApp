@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrewmcclary.triviaapp.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.andrewmcclary.triviaapp.fragment_quiz"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="395dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:text="This is where the question will go"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="25dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_question">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40sp"
+                android:text="Answer B"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40sp"
+                android:text="Answer A"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40sp"
+                android:text="Answer C"
+                android:textColor="@android:color/white" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40sp"
+                android:text="Answer D"
+                android:textColor="@android:color/white" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_next_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Next"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_marginTop="500dp"/>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
